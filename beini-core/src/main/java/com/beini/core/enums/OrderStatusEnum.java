@@ -3,6 +3,9 @@ package com.beini.core.enums;
 import lombok.Getter;
 
 /**
+ * 订单状态枚举类
+ * @author lb_chen
+ * @date 2018-04-17 20:27
  */
 @Getter
 public enum OrderStatusEnum implements CodeEnum {

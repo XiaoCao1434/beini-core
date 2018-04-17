@@ -1,9 +1,14 @@
 package com.beini.core.utils;
 
 /**
+ * 数字工具类
+ * @author lb_chen
+ * @date 2018-04-17 20:14
  */
 public class MathUtil {
-
+	/**
+	 * 金额的最小度量单位
+	 */
     private static final Double MONEY_RANGE = 0.01;
 
     /**

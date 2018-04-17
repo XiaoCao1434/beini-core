@@ -3,6 +3,9 @@ package com.beini.core.enums;
 import lombok.Getter;
 
 /**
+ * 结果集枚举类
+ * @author lb_chen
+ * @date 2018-04-17 20:32
  */
 @Getter
 public enum ResultEnum {
