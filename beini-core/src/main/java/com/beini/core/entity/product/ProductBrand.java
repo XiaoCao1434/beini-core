@@ -17,7 +17,7 @@ import org.hibernate.annotations.Table;
  */
 @Entity
 @Table(comment="商品品牌表", appliesTo = "product_brand")
-public class productBrand implements Serializable {
+public class ProductBrand implements Serializable {
 	private static final long serialVersionUID = -4465600652849531408L;
 	/**
 	 * 自动编码

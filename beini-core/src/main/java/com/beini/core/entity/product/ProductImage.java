@@ -24,7 +24,7 @@ public class ProductImage implements Serializable {
 	 */
 	@Id
 	@Column(columnDefinition="int(11) COMMENT '表ID'")
-	private int id;
+	private Integer id;
 	/**
 	 * 类型
 	 * <ul>

@@ -24,7 +24,7 @@ public class ProductDescription implements Serializable {
 	 */
 	@Id
 	@Column(columnDefinition="int(11) COMMENT '表主键'")
-	private int id;
+	private Integer id;
 	/**
 	 * 商品编码
 	 */
