@@ -1,5 +1,6 @@
 package com.beini.core.utils;
 
+import com.beini.core.enums.ResultEnum;
 import com.beini.core.vo.ResultVO;
 
 /**
@@ -17,8 +18,9 @@ public class ResultVOUtil {
 	public static ResultVO success(Object object) {
         ResultVO resultVO = new ResultVO();
         resultVO.setData(object);
-        resultVO.setCode(0);
-        resultVO.setMsg("成功");
+        ResultEnum resultEnum = ResultEnum.SUCCESS;
+        resultVO.setCode(resultEnum.getCode());
+        resultVO.setMsg(resultEnum.getMessage());
         return resultVO;
     }
 	/**
@@ -34,10 +36,18 @@ public class ResultVOUtil {
      * @param msg 自定义的错误信息
      * @return 结果集VO
      */
-    public static ResultVO error(Integer code, String msg) {
+    private static ResultVO error(Integer code, String msg) {
         ResultVO resultVO = new ResultVO();
         resultVO.setCode(code);
         resultVO.setMsg(msg);
         return resultVO;
+    }
+    /**
+     * 失败
+     * @param resultEnum 结果集枚举类
+     * @return 结果集VO
+     */
+    public static ResultVO error(ResultEnum resultEnum) {
+    	return error(resultEnum.getCode(),resultEnum.getMessage());
     }
 }
