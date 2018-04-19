@@ -1,5 +1,9 @@
 package com.beini.authorization.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +13,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class RoleInfo extends BaseInfo{
+	@Id
+	@GeneratedValue
 	private int  roleId;
 	/**
 	 * 角色code

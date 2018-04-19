@@ -1,15 +1,22 @@
 package com.beini.authorization.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
 public class UserInfo extends BaseInfo{
 	/**
 	 * 序列号
 	 */
-	private int id;
+	@Id
+	@GeneratedValue
+	private Integer id;
 	/**
 	 * 用户code
 	 */
@@ -17,11 +24,11 @@ public class UserInfo extends BaseInfo{
 	/**
 	 * 登录名
 	 */
-	private String userName;
+	private String username;
 	/**
 	 * 密码
 	 */
-	private String userPassWord;
+	private String userPassword;
 	/**
 	 * 云表code	
 	 */
@@ -29,7 +36,7 @@ public class UserInfo extends BaseInfo{
 	/**
 	 * 云表密码
 	 */
-	private String yunBiaoUserPassWord;
+	private String yunBiaoUserPassword;
 	/**
 	 * 昵称
 	 */

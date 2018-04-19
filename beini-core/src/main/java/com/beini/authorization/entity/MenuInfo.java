@@ -1,11 +1,18 @@
 package com.beini.authorization.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
 public class MenuInfo extends BaseInfo {
+	@Id
+	@GeneratedValue
 	private int menuId;
 	/**
 	 * 菜单名称
