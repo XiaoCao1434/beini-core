@@ -52,6 +52,7 @@ public class StringUtil extends StringUtils{
 	public static final double DOUBLE_INT_ZERO                                  = 0.00;
 	public static final double DOUBLE_INT_MAX                                   = 99999999.00;
 	public static final Integer CHAR_INT_ONE                                 	= 1;
+	public static final Integer CHAR_INT_TWO                                 	= 2;
 	public static final Integer CHAR_INT_EIGHT                                 	= 8;
 	
 	/** 
