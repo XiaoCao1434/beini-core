@@ -72,7 +72,7 @@ public class JsonUtil {
 		} else if (clazz == String.class) {
 			return (String) value;
 		} else if (clazz == boolean.class || clazz == Boolean.class) {
-			return (boolean) value ? StringUtil.TRUE : StringUtil.FALSE;
+			return (Boolean) value ? StringUtil.TRUE : StringUtil.FALSE;
 		}
 		/* 非常见8大类型和String */
 		else {
