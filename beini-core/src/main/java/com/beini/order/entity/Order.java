@@ -16,8 +16,8 @@ import org.hibernate.annotations.Table;
  * @Date 2018-04-08 11:25
  * @Order 20
  */
-@Entity(name="`order`")
-@Table(comment="订单表", appliesTo = "`order`")
+@Entity(name="t_order")
+@Table(comment="订单表", appliesTo = "t_order")
 public class Order implements Serializable {
 	private static final long serialVersionUID = -376163985882L;
 	/**

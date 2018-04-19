@@ -12,6 +12,8 @@ public enum ResultEnum {
 	/*common*/
 	SUCCESS(0, "成功"),
     PARAM_ERROR(1, "参数不正确"),
+   
+    
     /*商品属性*/
 	PRODUCT_ATTRIBUTE_UPDATE_FAIL(120,"商品属性更新失败"),
 	PRODUCT_ATTRIBUTE_INSERT_FAIL(121,"商品属性新增失败"),
@@ -35,14 +37,18 @@ public enum ResultEnum {
 	PRODUCT_BRAND_INSERT_FAIL(151,"品牌新增失败"),
 	PRODUCT_BRAND_DELETE_FAIL(152,"品牌删除失败"),
 	PRODUCT_BRAND_NOT_EXIST(153, "品牌不存在"),
-	PRODUCT_STOCK_ERROR(11, "商品库存不正确"),
-	PRODUCT_STATUS_ERROR(24, "商品状态不正确"),
+	PRODUCT_STOCK_ERROR(154, "商品库存不正确"),
+	PRODUCT_STATUS_ERROR(155, "商品状态不正确"),
+	
+	 /*订单*/
+	ORDER_UPDATE_FAIL(160,"订单更新失败"),
+	ORDER_INSERT_FAIL(161,"订单新增失败"),
+	ORDER_DELETE_FAIL(162,"订单删除失败"),
+	ORDER_NOT_EXIST(163, "订单不存在"),
 	
     /*订单*/
-    ORDER_NOT_EXIST(12, "订单不存在"),
     ORDERDETAIL_NOT_EXIST(13, "订单详情不存在"),
     ORDER_STATUS_ERROR(14, "订单状态不正确"),
-    ORDER_UPDATE_FAIL(15, "订单更新失败"),
     ORDER_DETAIL_EMPTY(16, "订单详情为空"),
     ORDER_PAY_STATUS_ERROR(17, "订单支付状态不正确"),
     ORDER_CANCEL_SUCCESS(22, "订单取消成功"),
