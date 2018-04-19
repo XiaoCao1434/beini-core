@@ -46,10 +46,15 @@ public enum ResultEnum {
 	ORDER_DELETE_FAIL(162,"订单删除失败"),
 	ORDER_NOT_EXIST(163, "订单不存在"),
 	
+	 /*订单详情*/
+	ORDER_DETAIL_UPDATE_FAIL(160,"订单更新失败"),
+	ORDER_DETAIL_INSERT_FAIL(161,"订单新增失败"),
+	ORDER_DETAIL_DELETE_FAIL(162,"订单删除失败"),
+	ORDER_DETAIL_NOT_EXIST(13, "订单详情不存在"),
+	ORDER_DETAIL_EMPTY(16, "订单详情为空"),
+	
     /*订单*/
-    ORDERDETAIL_NOT_EXIST(13, "订单详情不存在"),
     ORDER_STATUS_ERROR(14, "订单状态不正确"),
-    ORDER_DETAIL_EMPTY(16, "订单详情为空"),
     ORDER_PAY_STATUS_ERROR(17, "订单支付状态不正确"),
     ORDER_CANCEL_SUCCESS(22, "订单取消成功"),
     ORDER_FINISH_SUCCESS(23, "订单完结成功"),
