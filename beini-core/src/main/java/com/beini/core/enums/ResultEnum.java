@@ -12,6 +12,17 @@ public enum ResultEnum {
 	/*common*/
 	SUCCESS(0, "成功"),
     PARAM_ERROR(1, "参数不正确"),
+    /*商品属性*/
+	PRODUCT_ATTRIBUTE_UPDATE_FAIL(120,"商品属性更新失败"),
+	PRODUCT_ATTRIBUTE_INSERT_FAIL(121,"商品属性新增失败"),
+	PRODUCT_ATTRIBUTE_DELETE_FAIL(122,"商品属性删除失败"),
+	PRODUCT_ATTRIBUTE_NOT_EXIST(123, "商品属性不存在"),
+    
+	/*商品与属性关联信息*/
+    PRODUCT_AND_ATTRIBUTE_UPDATE_FAIL(130,"商品与属性关联信息更新失败"),
+	PRODUCT_AND_ATTRIBUTE_INSERT_FAIL(131,"商品与属性关联信息新增失败"),
+	PRODUCT_AND_ATTRIBUTE_DELETE_FAIL(132,"商品与属性关联信息删除失败"),
+	PRODUCT_AND_ATTRIBUTE_NOT_EXIST(133, "商品与属性关联信息不存在"),
 	
 	/*商品*/
 	PRODUCT_UPDATE_FAIL(140,"商品更新失败"),

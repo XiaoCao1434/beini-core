@@ -1,6 +1,7 @@
 package com.beini.core.utils;
 
 import java.util.Random;
+import java.util.UUID;
 
 import com.beini.core.enums.KeyPrefixEnum;
 
@@ -31,4 +32,11 @@ public class KeyUtil {
         Integer number = random.nextInt(900000) + 100000;
         return keyPrefixEnum.getPrefix()+System.currentTimeMillis() + String.valueOf(number);
     }
+    /**
+     * 生成无 "-"的uuid
+     * @return UUID字符串
+     */
+    public static String uuid() {
+		return UUID.randomUUID().toString().replace("-", "");
+	}
 }
