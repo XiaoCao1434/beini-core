@@ -53,8 +53,8 @@ public class Product implements Serializable {
 	/**
 	 * 商品总库存
 	 */
-	@Column(columnDefinition="int(11) COMMENT '商品总库存'")
-	private int stock;
+	@Column(columnDefinition="double COMMENT '商品总库存'")
+	private double stock;
 	/**
 	 * 告警库存
 	 */
@@ -130,12 +130,12 @@ public class Product implements Serializable {
 		this.maxPrice = maxPrice;
 	}
 
-	public int getStock() {
+	public double getStock() {
 		return stock;
 	}
 
-	public void setStock(int stock) {
-		this.stock = stock;
+	public void setStock(double d) {
+		this.stock = d;
 	}
 
 	public int getWarningStock() {
@@ -170,4 +170,10 @@ public class Product implements Serializable {
 		this.status = status;
 	}
 
+	@Override
+	public String toString() {
+		return "Product [proUuid=" + proUuid + ", proMarque=" + proMarque + ", pcUuid=" + pcUuid + ", pbUuid=" + pbUuid
+				+ ", minPrice=" + minPrice + ", maxPrice=" + maxPrice + ", stock=" + stock + ", warningStock="
+				+ warningStock + ", inregral=" + inregral + ", pictureUrl=" + pictureUrl + ", status=" + status + "]";
+	}
 }

@@ -66,8 +66,8 @@ public class OrderDetail implements Serializable {
 	/**
 	 * 购买数量
 	 */
-	@Column(columnDefinition = "int(11) COMMENT '购买数量'")
-	private int number;
+	@Column(columnDefinition = "double COMMENT '购买数量'")
+	private double number;
 	/**
 	 * 客户商品备注
 	 */
@@ -138,12 +138,12 @@ public class OrderDetail implements Serializable {
 		this.discountAmount = discountAmount;
 	}
 
-	public int getNumber() {
+	public double getNumber() {
 		return number;
 	}
 
-	public void setNumber(int number) {
-		this.number = number;
+	public void setNumber(double d) {
+		this.number = d;
 	}
 
 	public String getRemark() {
