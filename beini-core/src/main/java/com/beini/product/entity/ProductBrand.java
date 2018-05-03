@@ -56,6 +56,9 @@ public class ProductBrand implements Serializable {
 	@Column(columnDefinition="int(11) COMMENT '品牌状态:0-冻结,1-正常'")
 	private int status;
 	
+	public ProductBrand() {
+	}
+
 	public String getPbUuid() {
 		return pbUuid;
 	}
