@@ -12,11 +12,18 @@ public enum ResultEnum {
 	/*common*/
 	SUCCESS(0, "成功"),
     PARAM_ERROR(1, "参数不正确"),
+    PROGRAM_ERROR(500, "程序错误"),
     /*登录登出*/
     LOGIN_FAIL(25, "登录失败, 登录信息不正确"),
     LOGOUT_SUCCESS(26, "登出成功"), 
     USERNAME_OR_PASSWORD_ERROR(27,"用户名或密码错误"),
     TOKEN_FAILED(28,"访问令牌错误或失效"),
+    
+    /*用户信息*/
+	USER_UPDATE_FAIL(310,"用户信息更新失败"),
+	USER_INSERT_FAIL(311,"用户信息新增失败"),
+	USER_DELETE_FAIL(312,"用户信息删除失败"),
+	USER_NOT_EXIST(313, "用户信息不存在"),
     
     /*商品库存*/
 	PRODUCT_STOCK_ERROR(100, "商品库存不正确"),
@@ -103,6 +110,8 @@ public enum ResultEnum {
     WECHAT_MP_ERROR(300, "微信公众账号方面错误"),
     WXPAY_NOTIFY_MONEY_VERIFY_ERROR(301, "微信支付异步通知金额校验不通过"),
     
+    /*小程序*/
+    MINI_PROGRAM_LOGIN_ERROR(701, "请进行微信授权"),
     
     ;
 

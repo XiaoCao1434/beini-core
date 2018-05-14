@@ -36,7 +36,7 @@ public class ResultVOUtil {
      * @param msg 自定义的错误信息
      * @return 结果集VO
      */
-    private static ResultVO error(Integer code, String msg) {
+    public static ResultVO error(Integer code, String msg) {
         ResultVO resultVO = new ResultVO();
         resultVO.setCode(code);
         resultVO.setMsg(msg);
