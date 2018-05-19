@@ -2,6 +2,7 @@ package com.beini.core.utils;
 
 import java.util.List;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
 
 
@@ -105,5 +106,33 @@ public class StringUtil extends StringUtils {
 
 	public static boolean equalsIgnoreCase(String str1, String str2) {
 		return StringUtils.equalsIgnoreCase(str1, str2);
+	}
+
+	public static boolean isBlank(String str) {
+		return StringUtils.isBlank(str);
+	}
+
+	public static String substringBefore(String str, String separator) {
+		return StringUtils.substringBefore(str, separator);
+	}
+
+	public static String randomNumeric(int count) {
+		return RandomStringUtils.random(count);
+	}
+
+	public static boolean equals(String str1, String str2) {
+		return StringUtils.equals(str1, str2);
+	}
+
+	public static String substringBetween(String str, String open, String close) {
+		return StringUtils.substringBetween(str, open, close);
+	}
+
+	public static String substringAfterLast(String str, String separator) {
+		return StringUtils.substringAfterLast(str, separator);
+	}
+
+	public static boolean contains(String str, String searchChar) {
+		return StringUtils.contains(str, searchChar);
 	}
 }
