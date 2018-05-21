@@ -100,6 +100,16 @@ public enum ResultEnum {
 	ORDER_DETAIL_NOT_EXIST(213, "订单详情不存在"),
 	ORDER_DETAIL_EMPTY(214, "订单详情为空"),
 	
+	 /*收货地址信息*/
+	/**
+	 * 210 收货地址信息更新失败
+	 */
+	DELIVERY_ADDRESS_UPDATE_FAIL(210,"收货地址信息更新失败"),
+	DELIVERY_ADDRESS_INSERT_FAIL(211,"收货地址信息新增失败"),
+	DELIVERY_ADDRESS_DELETE_FAIL(212,"收货地址信息删除失败"),
+	DELIVERY_ADDRESS_NOT_EXIST(213, "收货地址不存在"),
+	DELIVERY_ADDRESS_EMPTY(214, "收货地址信息为空"),
+	
     /*订单支付*/
     ORDER_PAY_STATUS_ERROR(220, "订单支付状态不正确"),
     

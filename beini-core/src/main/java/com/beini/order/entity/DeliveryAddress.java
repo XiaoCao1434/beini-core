@@ -9,6 +9,10 @@ import javax.persistence.Id;
 
 import org.hibernate.annotations.Table;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * 收货地址表
  * 
@@ -16,74 +20,89 @@ import org.hibernate.annotations.Table;
  * @Date 2018-04-08 11:46
  * @Order 20
  */
+@ApiModel(value="收货地址信息表",description="收货地址信息表")
+@Api
 @Entity
 @Table(comment="收货地址表", appliesTo = "delivery_address")
 public class DeliveryAddress implements Serializable {
 	private static final long serialVersionUID = 3577681229089489488L;
 	/**
-	 * 订单明细编码
+	 * 收货地址编码
 	 */
+	@ApiModelProperty(value="收货地址编码")
 	@Id
-	@Column(columnDefinition="varchar(255) COMMENT '订单明细编码'")
+	@Column(columnDefinition="varchar(255) COMMENT '收货地址编码'")
 	private String deAdUuid;
 	/**
 	 * 用户编码
 	 */
+	@ApiModelProperty(value="用户编码")
 	@Column(columnDefinition="varchar(255) COMMENT '用户编码'")
 	private String openId;
 	/**
 	 * 收件人姓名
 	 */
+	@ApiModelProperty(value="收件人姓名")
 	@Column(columnDefinition="varchar(255) COMMENT '收件人姓名'")
 	private String realName;
 	/**
 	 * 收件人电话
 	 */
+	@ApiModelProperty(value="收件人电话")
 	@Column(columnDefinition="varchar(255) COMMENT '收件人电话'")
 	private String telPhone;
 	/**
 	 * 收件人备用电话
 	 */
+	@ApiModelProperty(value="收件人备用电话")
 	@Column(columnDefinition="varchar(255) COMMENT '收件人备用电话'")
 	private String telPhone2;
 	/**
 	 * 国家
 	 */
+	@ApiModelProperty(value="国家")
 	@Column(columnDefinition="varchar(255) COMMENT '国家'")
 	private String country;
 	/**
 	 * 省份
 	 */
+	@ApiModelProperty(value="省份")
 	@Column(columnDefinition="varchar(255) COMMENT '省份'")
 	private String province;
 	/**
 	 * 城市
 	 */
+	@ApiModelProperty(value="城市")
 	@Column(columnDefinition="varchar(255) COMMENT '城市'")
 	private String city;
 	/**
 	 * 地区
 	 */
+	@ApiModelProperty(value="地区")
 	@Column(columnDefinition="varchar(255) COMMENT '地区'")
 	private String area;
 	/**
 	 * 街道/详细地址
 	 */
+	@ApiModelProperty(value="街道/详细地址")
 	@Column(columnDefinition="varchar(255) COMMENT '街道/详细地址'")
 	private String street;
 	/**
 	 * 邮政编码
 	 */
+	@ApiModelProperty(value="邮政编码")
 	@Column(columnDefinition="varchar(255) COMMENT '邮政编码'")
 	private String zip;
 	/**
 	 * 是否默认收货地址
 	 */
+	@ApiModelProperty(value="是否默认收货地址")
 	@Column(columnDefinition="char(1) COMMENT '是否默认收货地址'")
 	private boolean isDefaultAddress;
 	/**
 	 * 创建时间
 	 */
+	@ApiModelProperty(value="创建时间")
 	@Column(columnDefinition="datetime COMMENT '创建时间'")
 	private Date createTime;
 
